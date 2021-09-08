@@ -2,8 +2,12 @@ const express = require('express');
 const jwt = require('jsonwebtoken');
 
 const app = express();
-const SECRET_KEY = 'b528d2e981ae28019e9f0cd792eeb859b411f68b14ac3512889c9f5033e60eac';
+
 const PORT = 4096;
+
+// ideally, this needs to be saved in a .env file 
+// (which is excluded by the .gitignore created here)
+const SECRET_KEY = 'b528d2e981ae28019e9f0cd792eeb859b411f68b14ac3512889c9f5033e60eac';
 
 
 // default endpoint
